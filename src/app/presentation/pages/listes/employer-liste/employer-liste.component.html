@@ -1,0 +1,11 @@
+<h3>Liste Employers</h3>
+
+<p>
+  * <button style="background-color: darkgreen;" (click)="creerEmployer()">Creer</button>
+</p>
+
+<div *ngFor="let employer of listEmployer">
+  {{employer.nom}} {{employer.prenoms}}
+  <button style="background-color: darkblue; margin-right: 1rem;" (click)="modifierEmployer(employer)">Modifier</button>
+  <button style="background-color: darkred;" (click)="supprimerEmployer(employer.id)">supprimer</button>
+</div>
